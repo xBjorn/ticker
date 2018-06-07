@@ -34,7 +34,14 @@ if __name__ == '__main__':
 		if len(sys.argv) == 2 and sys.argv[1] in showCurrency:
 
 			c = Currency(sys.argv[1])
-			c.calculateCurrency()
+			
+			try:
+			
+				c.calculateCurrency()
+				
+			except:
+				
+				print "Symbol could not be shown, try another currency in the list."
 
 		else:
 
