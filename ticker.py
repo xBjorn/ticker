@@ -28,9 +28,6 @@ def usage():
 
 if __name__ == '__main__':
 
-
-
-
 		r = requests.get('https://blockchain.info/ticker')
 		showCurrency = json.loads(r.text)
 
