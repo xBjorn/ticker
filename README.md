@@ -1,4 +1,5 @@
-Some symbols dont work
-Usage is self explanatory, run the program ticket.py and a function will pop up helping you.
-
-Example: ticket.py USD
+A small script in Python that gathers data from the Blockchain API https://blockchain.info/ticker <\br>
+But its OOP so its all gucci right? <\br>
+NOTE: Some symbols dont work due to unicode messing up which results in an error, im 2lazy2fixit<\br>
+<br>
+EXAMPLE: ticker.py USD
