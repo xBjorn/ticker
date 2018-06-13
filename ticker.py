@@ -2,10 +2,8 @@ import json,requests,sys
 from time import sleep
 
 class Currency:
-
 	def __init__(self, setCurrency):
 		self.setCurrency = setCurrency
-
 
 	def calculateCurrency(self):
 		print "===========BLOCKCHAIN==========="
@@ -13,21 +11,14 @@ class Currency:
 		print "================================"
 
 def usage():
-
 		print "===Options==="
-
 		for currency in showCurrency:
 			print currency
-
 		print "============="
 		print "Usage like so:"
 		print "ticker.py <currency>"
 
-
-
-
 if __name__ == '__main__':
-
 		r = requests.get('https://blockchain.info/ticker')
 		showCurrency = json.loads(r.text)
 
@@ -36,11 +27,9 @@ if __name__ == '__main__':
 			c = Currency(sys.argv[1])
 			
 			try:
-			
 				c.calculateCurrency()
-				
+			
 			except:
-				
 				print "Symbol could not be shown, try another currency in the list."
 
 		else:
